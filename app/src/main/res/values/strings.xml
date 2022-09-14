@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mobile Developer Intern 2022 Suitmedia</string>
+
+    <string name="name">Name</string>
+    <string name="palindrome">Palindrome</string>
+    <string name="check">Check</string>
+    <string name="next">Next</string>
+
+    <string name="palindrome_true">isPalindrome</string>
+    <string name="palindrome_false">not palindrome</string>
+    <string name="title_activity_second_screen">SecondScreenActivity</string>
+    <string name="choose_a_user">Choose a User</string>
+    <string name="selected_user">Selected User %s</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="third_screen">Third Screen</string>
+</resources>
