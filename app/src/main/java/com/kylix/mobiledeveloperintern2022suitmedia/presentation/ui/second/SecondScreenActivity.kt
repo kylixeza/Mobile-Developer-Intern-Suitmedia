@@ -31,9 +31,12 @@ class SecondScreenActivity : BaseActivity<ActivitySecondScreenBinding>() {
     override fun ActivitySecondScreenBinding.binder() {
         val nameArg = intent.getStringExtra(EXTRA_NAME) ?: ""
         
-        setSupportActionBar(secondScreenToolbar)
-        supportActionBar?.hide()
-        tvTitle.text = resources.getString(R.string.second_screen)
+        secondScreenAppBar.apply {
+            setSupportActionBar(toolbar)
+            supportActionBar?.hide()
+            ivBack.setOnClickListener { finish() }
+            tvTitle.text = resources.getString(R.string.second_screen)
+        }
         
         viewModel.setName(nameArg)
         

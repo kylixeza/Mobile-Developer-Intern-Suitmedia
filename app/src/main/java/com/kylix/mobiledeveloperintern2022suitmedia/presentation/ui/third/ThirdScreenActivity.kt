@@ -28,10 +28,13 @@ class ThirdScreenActivity : BaseActivity<ActivityThirdScreenBinding>() {
     }
     
     override fun ActivityThirdScreenBinding.binder() {
-        setSupportActionBar(thirdScreenToolbar)
-        supportActionBar?.hide()
-        tvTitle.text = resources.getString(R.string.third_screen)
-        ivBack.setOnClickListener { finish() }
+        
+        thirdScreenAppBar.apply {
+            setSupportActionBar(toolbar)
+            supportActionBar?.hide()
+            tvTitle.text = resources.getString(R.string.third_screen)
+            ivBack.setOnClickListener { finish() }
+        }
         
         rvUser.apply {
             adapter =  this@ThirdScreenActivity.adapter
