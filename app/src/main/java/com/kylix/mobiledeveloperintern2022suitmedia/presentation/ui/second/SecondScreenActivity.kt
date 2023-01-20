@@ -46,7 +46,7 @@ class SecondScreenActivity : BaseActivity<ActivitySecondScreenBinding>() {
             }
         }
     
-        tvSelectedUser.text = resources.getString(R.string.selected_user, USER_NAME ?: "")
+        tvSelectedUser.text = USER_NAME ?: ""
         
         btnChooseUser.setOnClickListener {
             val intent = Intent(this@SecondScreenActivity, ThirdScreenActivity::class.java)
@@ -56,7 +56,7 @@ class SecondScreenActivity : BaseActivity<ActivitySecondScreenBinding>() {
     
     override fun onResume() {
         super.onResume()
-        binding.tvSelectedUser.text = resources.getString(R.string.selected_user, USER_NAME ?: "")
+        binding.tvSelectedUser.text = USER_NAME ?: ""
     }
     
 }

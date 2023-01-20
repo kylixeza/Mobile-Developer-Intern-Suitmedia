@@ -24,7 +24,7 @@ class UserPagingAdapter: PagingDataAdapter<User, UserPagingAdapter.UserViewHolde
                 tvEmail.text = user.email
     
                 itemView.setOnClickListener {
-                    Constant.USER_NAME = user.firstName
+                    Constant.USER_NAME = "${user.firstName} ${user.lastName}"
                     Toast.makeText(itemView.context, "Selected User: ${user.firstName}", Toast.LENGTH_SHORT).show()
                 }
             }
