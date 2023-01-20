@@ -1,14 +1,12 @@
 package com.kylix.mobiledeveloperintern2022suitmedia.presentation.ui.third
 
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import androidx.paging.*
 import com.kylix.mobiledeveloperintern2022suitmedia.data.paging.UserPagingSource
 import com.kylix.mobiledeveloperintern2022suitmedia.model.User
 import com.kylix.mobiledeveloperintern2022suitmedia.util.State
 import com.kylix.mobiledeveloperintern2022suitmedia.util.toUser
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 
 class ThirdScreenViewModel(

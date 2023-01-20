@@ -11,7 +11,6 @@ import com.kylix.mobiledeveloperintern2022suitmedia.presentation.ui.third.ThirdS
 import com.kylix.mobiledeveloperintern2022suitmedia.util.Constant.EXTRA_NAME
 import com.kylix.mobiledeveloperintern2022suitmedia.util.Constant.USER_NAME
 import com.kylix.mobiledeveloperintern2022suitmedia.util.ScreenOrientation
-import kotlinx.coroutines.flow.collect
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SecondScreenActivity : BaseActivity<ActivitySecondScreenBinding>() {

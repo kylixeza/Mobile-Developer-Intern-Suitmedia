@@ -3,7 +3,6 @@ package com.kylix.mobiledeveloperintern2022suitmedia.presentation.validator
 import android.annotation.SuppressLint
 import com.jakewharton.rxbinding2.widget.RxTextView
 import com.kylix.mobiledeveloperintern2022suitmedia.databinding.ActivityFirstScreenBinding
-import io.reactivex.Observable
 
 class FirstScreenValidator(
     private val binding: ActivityFirstScreenBinding
